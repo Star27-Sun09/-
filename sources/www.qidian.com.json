@@ -3,7 +3,7 @@
     "url": "www.qidian.com",
     "version": 100,
     "search":{
-        "url":"https://www.qidian.com/so/%{key}.html",
+        "url":"https://www.qidian.com/so/${key}.html",
         "charset":"utf-8",
         "list": "div.book-img-text > li.res-book-item jsAutoReport",
         "name": "h3.book-info-title > a",
