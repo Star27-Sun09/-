@@ -1,25 +1,25 @@
 {
-    "name": "起点中文网",
+    "name": "起点",
     "url": "www.qidian.com",
-    "version": 101,
-    "search": {
-        "url": "https://www.qidian.com/so/${key}.html",
-        "charset": "utf-8",
+    "version": 100,
+    "search":{
+        "url":"https://www.qidian.com/so/${key}.html",
+        "charset":"utf-8",
         "list": "ul > li.res-book-item",
-        "name": "h4 > a",
-        "detail": "h4 > a[href]"
+        "name": "h3.book-info-title a",
+        "detail": "h3.book-info-title a@href"
     },
     "detail": {
-        "name": ".book-info h1 > em",
-        "catalog": ".book-info a.catalog[href]"
+        "name": "div.book-info-top h1",
+        "catalog": "p.catalog-header-infos > a.href"
     },
     "catalog": {
-        "list": ".volume-wrap li",
+        "list": ".volume-chapters > li",
         "orderBy": 0,
         "name": "a",
-        "chapter": "a[href]"
+        "chapter": "a"
     },
     "chapter": {
-        "content": ".read-content > p"
+        "content": ".relative > p"
     }
 }
