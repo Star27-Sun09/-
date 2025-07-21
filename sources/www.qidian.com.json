@@ -1,0 +1,25 @@
+{
+    "name": "起点",
+    "url": "www.qidian.com",
+    "version": 100,
+    "search":{
+        "url":"https://www.qidian.com/so/%{key}.html",
+        "charset":"utf-8",
+        "list": "div.book-img-text > li.res-book-item jsAutoReport",
+        "name": "h3.book-info-title > a",
+        "detail": "h3.book-info-title > a"
+    },
+    "detail": {
+        "name": ".bookName",
+        "catalog": "p.catalog-header-infos > a.href"
+    },
+    "catalog": {
+        "list": ".volume-chapters > li",
+        "orderBy": 0,
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": ".relative > p"
+    }
+}
