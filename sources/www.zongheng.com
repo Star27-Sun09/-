@@ -1,7 +1,7 @@
 {
     "name": "纵横中文网",
     "url": "www.zongheng.com",
-    "version": 104,
+    "version": 100,
     "search": {
         "url": "http://search.zongheng.com/s?keyword=${key}",
          "charset": "utf-8",
