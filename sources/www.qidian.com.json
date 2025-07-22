@@ -3,11 +3,12 @@
     "url": "www.qidian.com",
     "version": 100,
     "search":{
-        "url":"https://www.qidian.com/so/${key}.html",
+        "url":"https://www.qidian.com/so/{{key}}.html?page={{page}}",
         "charset":"utf-8",
-        "list": "ul li.res-book-item",
-        "name": "h3.book-info-title a",
-        "detail": "h3.book-info-title a@href"
+        "list":"class.res-book-item jsAutoReport",
+        "name":"class.book-info-title@text",
+        "author":"class.author@a.0@text",
+        "detail":"class.book-img-box@a@href"
     },
     "detail": {
         "name": "div.book-info-top h1",
